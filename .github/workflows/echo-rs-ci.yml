@@ -1,4 +1,4 @@
-name: echo-rs CI
+name: cat-rs CI
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up echo-rs
+      - name: Set up cat-rs
         uses: actions/checkout@v2
       - name: Install cargo-audit
         run: cargo install cargo-audit
